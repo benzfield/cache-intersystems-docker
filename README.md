@@ -19,6 +19,6 @@ $ docker-compose up
 
 - 访问服务
 使用如下地址访问：
-http://服务IP地址/csp/sys/utilHome.csp
+http://127.0.0.1:8088/csp/sys/utilHome.csp
 
 

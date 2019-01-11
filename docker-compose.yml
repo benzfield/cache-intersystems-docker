@@ -3,6 +3,8 @@ services:
     app:
         container_name: 'cache-gateway'
         image: registry.cn-hangzhou.aliyuncs.com/yab/intersystems-cachedb:gateway
+        ports:
+          - 8088:80
         mem_limit: 100mb
         memswap_limit: 100mb
         domainname: local.weblocus
@@ -14,6 +16,8 @@ services:
     cache:
         container_name: 'cache-database'
         image: registry.cn-hangzhou.aliyuncs.com/yab/intersystems-cachedb:database
+        ports:
+          - 61972:1972
         command: mkdir /usr/cachesys/mgr/data-external
         mem_limit: 200mb
         memswap_limit: 200mb
