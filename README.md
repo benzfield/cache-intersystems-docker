@@ -1,18 +1,24 @@
-# Docker-Cache-Intersystems
+# Docker-Cache-Intersystems 
 Caché Intersystens in Docker Container
+
+本工程fork自https://github.com/tiagogribeiro/cache-intersystems-docker
 
 https://hub.docker.com/r/tiagoribeiro/cache-database/
 
-# New version
+# 版本信息
 2016.2.1.803
 
-Structure in two containers, one for gateway other database.
-Using docker-compose for build and execution
+# 安装步骤
 
-Is necessary **docker enginer** and **docker-compose.**
+- 需要提前安装好docker和docker-compose工具
 
+- 修改docker-compose.yml文件，调整网络地址为你本机所在的网络
+
+- 启动服务
 $ docker-compose up
 
-Access portal for configuration in http://172.16.0.2/csp/sys/utilHome.csp
+- 访问服务
+使用如下地址访问：
+http://服务IP地址/csp/sys/utilHome.csp
 
 
